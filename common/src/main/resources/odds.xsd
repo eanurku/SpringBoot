@@ -1,0 +1,149 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+    <xs:simpleType name="id">
+        <xs:restriction base="xs:integer"/>
+    </xs:simpleType>
+    <xs:simpleType name="empty-string">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value=""/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="datetime">
+        <xs:restriction base="xs:dateTime"/>
+    </xs:simpleType>
+    <xs:simpleType name="datetime_opt">
+        <xs:union memberTypes="xs:dateTime empty-string"/>
+    </xs:simpleType>
+    <!--  result  -->
+    <xs:complexType name="resultstatus">
+        <xs:simpleContent>
+            <xs:extension base="xs:string">
+                <xs:attribute name="last_updated" type="datetime" use="required"/>
+                <xs:attribute name="minute" type="xs:integer" use="required"/>
+            </xs:extension>
+        </xs:simpleContent>
+    </xs:complexType>
+    <xs:complexType name="result">
+        <xs:attribute name="id" type="xs:integer" use="required"/>
+        <xs:attribute name="name" type="xs:string" use="required"/>
+        <xs:attribute name="value" type="xs:string" use="required"/>
+    </xs:complexType>
+    <xs:complexType name="period">
+        <xs:sequence>
+            <xs:element name="detail" minOccurs="0" maxOccurs="unbounded">
+                <xs:complexType>
+                    <xs:attribute name="name" type="xs:string" use="required"/>
+                    <xs:attribute name="value" type="xs:string" use="required"/>
+                </xs:complexType>
+            </xs:element>
+        </xs:sequence>
+        <xs:attribute name="id" type="xs:integer" use="required"/>
+        <xs:attribute name="name" type="xs:string" use="required"/>
+    </xs:complexType>
+    <xs:complexType name="score">
+        <xs:attribute name="name" type="xs:string" use="required"/>
+        <xs:attribute name="period" type="xs:string" use="required"/>
+        <xs:attribute name="team" type="xs:integer" use="required"/>
+        <xs:attribute name="time" type="xs:integer" use="required"/>
+        <xs:attribute name="type" type="xs:string" use="required"/>
+    </xs:complexType>
+    <xs:complexType name="results">
+        <xs:sequence>
+            <xs:element name="status" type="resultstatus" minOccurs="0"/>
+            <xs:element name="result" type="result" minOccurs="0" maxOccurs="unbounded"/>
+            <xs:element name="periods" minOccurs="0">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="period" type="period" minOccurs="0" maxOccurs="unbounded"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="scorers" minOccurs="0">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="score" type="score" minOccurs="0" maxOccurs="unbounded"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+    <!--  .....  -->
+    <xs:complexType name="team">
+        <xs:simpleContent>
+            <xs:extension base="xs:string">
+                <xs:attribute name="id" type="id" use="required"/>
+            </xs:extension>
+        </xs:simpleContent>
+    </xs:complexType>
+    <xs:complexType name="group">
+        <xs:simpleContent>
+            <xs:extension base="xs:string">
+                <xs:attribute name="id" type="id" use="required"/>
+                <xs:attribute name="cgid" type="id" use="required"/>
+                <xs:attribute name="spid" type="id" use="required"/>
+                <xs:attribute name="cnid" type="id" use="required"/>
+                <xs:attribute name="mgid" type="id" use="required"/>
+                <xs:attribute name="cname" type="xs:string" use="required"/>
+            </xs:extension>
+        </xs:simpleContent>
+    </xs:complexType>
+    <xs:simpleType name="offertype">
+        <xs:restriction base="xs:integer"/>
+    </xs:simpleType>
+    <xs:complexType name="odd">
+        <xs:simpleContent>
+            <xs:extension base="xs:string">
+                <xs:attribute name="dec" type="xs:decimal"/>
+            </xs:extension>
+        </xs:simpleContent>
+    </xs:complexType>
+    <xs:complexType name="odds">
+        <xs:sequence>
+            <xs:element name="o1" type="odd"/>
+            <xs:element name="o2" type="odd"/>
+            <xs:element name="o3" type="odd"/>
+            <xs:element name="o4" type="odd" minOccurs="0" maxOccurs="1"/>
+        </xs:sequence>
+        <xs:attribute name="i" type="xs:integer" use="required"/>
+        <xs:attribute name="time" type="datetime" use="required"/>
+        <xs:attribute name="starting_time" type="datetime_opt" use="required"/>
+    </xs:complexType>
+    <xs:complexType name="offer">
+        <xs:sequence>
+            <xs:element name="odds" type="odds" maxOccurs="unbounded"/>
+        </xs:sequence>
+        <xs:attribute name="id" type="id" use="required"/>
+        <xs:attribute name="n" type="xs:integer" use="required"/>
+        <xs:attribute name="ot" type="offertype" use="required"/>
+        <xs:attribute name="otname" type="xs:string" use="required"/>
+        <xs:attribute name="last_updated" type="datetime" use="required"/>
+        <xs:attribute name="flags" type="xs:integer" use="required"/>
+        <xs:attribute name="bmoid" type="xs:string" use="required"/>
+    </xs:complexType>
+    <xs:complexType name="bookmaker">
+        <xs:sequence>
+            <xs:element name="offer" type="offer" maxOccurs="unbounded"/>
+        </xs:sequence>
+        <xs:attribute name="bid" type="id" use="required"/>
+        <xs:attribute name="name" type="xs:string" use="required"/>
+    </xs:complexType>
+    <xs:complexType name="match">
+        <xs:sequence>
+            <xs:element name="time" type="datetime"/>
+            <xs:element name="group" type="group"/>
+            <xs:element name="hteam" type="team"/>
+            <xs:element name="ateam" type="team"/>
+            <xs:element name="results" type="results" minOccurs="0"/>
+            <xs:element name="bookmaker" type="bookmaker" maxOccurs="unbounded"/>
+        </xs:sequence>
+        <xs:attribute name="id" type="id" use="required"/>
+        <xs:attribute name="xsid" type="id" use="required"/>
+    </xs:complexType>
+    <xs:complexType name="matches">
+        <xs:sequence>
+            <xs:element name="match" type="match" minOccurs="0" maxOccurs="unbounded"/>
+        </xs:sequence>
+        <xs:attribute name="time" type="datetime" use="required"/>
+        <xs:attribute name="timestamp" type="xs:integer" use="required"/>
+    </xs:complexType>
+    <xs:element name="matches" type="matches"/>
+</xs:schema>

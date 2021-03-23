@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<groups>
+    <group>
+        <id>100304</id>
+        <mgroup id="1134">FBSRB</mgroup>
+        <name>Super Liga &gt; Regular Season</name>
+        <sid>20</sid>
+        <fullname>FBSRB Super Liga &gt; Regular Season-20</fullname>
+        <date1>2020-07-31 00:00:00</date1>
+        <date2>2021-05-19 00:00:00</date2>
+    </group>
+    <group>
+        <id>100310</id>
+        <mgroup id="1134">FBSRB</mgroup>
+        <name>Prva Liga &gt; Regular Season</name>
+        <sid>20</sid>
+        <fullname>FBSRB Prva Liga &gt; Regular Season-20</fullname>
+        <date1>2020-08-14 00:00:00</date1>
+        <date2>2021-05-19 00:00:00</date2>
+    </group>
+    <group>
+        <id>100896</id>
+        <mgroup id="1134">FBSRB</mgroup>
+        <name>U19 League</name>
+        <sid>20</sid>
+        <fullname>FBSRB U19 League-20</fullname>
+        <date1>2020-08-01 00:00:00</date1>
+        <date2>2021-06-30 00:00:00</date2>
+    </group>
+    <group>
+        <id>100974</id>
+        <mgroup id="1134">FBSRB</mgroup>
+        <name>Srpska Liga &gt; Vojvodina</name>
+        <sid>20</sid>
+        <fullname>FBSRB Srpska Liga &gt; Vojvodina-20</fullname>
+        <date1>2020-08-15 00:00:00</date1>
+        <date2>2021-06-05 00:00:00</date2>
+    </group>
+    <group>
+        <id>101143</id>
+        <mgroup id="1134">FBSRB</mgroup>
+        <name>Srpska Liga &gt; Belgrade</name>
+        <sid>20</sid>
+        <fullname>FBSRB Srpska Liga &gt; Belgrade-20</fullname>
+        <date1>2020-08-14 00:00:00</date1>
+        <date2>2021-06-30 00:00:00</date2>
+    </group>
+    <group>
+        <id>101144</id>
+        <mgroup id="1134">FBSRB</mgroup>
+        <name>Srpska Liga &gt; East</name>
+        <sid>20</sid>
+        <fullname>FBSRB Srpska Liga &gt; East-20</fullname>
+        <date1>2020-08-15 00:00:00</date1>
+        <date2>2021-06-06 00:00:00</date2>
+    </group>
+    <group>
+        <id>101145</id>
+        <mgroup id="1134">FBSRB</mgroup>
+        <name>Srpska Liga &gt; West</name>
+        <sid>20</sid>
+        <fullname>FBSRB Srpska Liga &gt; West-20</fullname>
+        <date1>2020-08-15 00:00:00</date1>
+        <date2>2021-06-05 00:00:00</date2>
+    </group>
+    <group>
+        <id>107212</id>
+        <mgroup id="1134">FBSRB</mgroup>
+        <name>Cup &gt; Quarter-finals</name>
+        <sid>20</sid>
+        <fullname>FBSRB Cup &gt; Quarter-finals-20</fullname>
+        <date1>2021-03-11 00:00:00</date1>
+        <date2>2021-03-31 00:00:00</date2>
+    </group>
+</groups>

@@ -1,0 +1,76 @@
+{
+  "group":[
+    {
+      "id":"100304",
+      "mgroup":"FBSRB",
+      "name":"Super Liga > Regular Season",
+      "sid":"20",
+      "fullname":"FBSRB Super Liga > Regular Season-20",
+      "date1":"2020-07-31 00:00:00",
+      "date2":"2021-05-19 00:00:00"
+    },
+    {
+      "id":"100310",
+      "mgroup":"FBSRB",
+      "name":"Prva Liga > Regular Season",
+      "sid":"20",
+      "fullname":"FBSRB Prva Liga > Regular Season-20",
+      "date1":"2020-08-14 00:00:00",
+      "date2":"2021-05-19 00:00:00"
+    },
+    {
+      "id":"100896",
+      "mgroup":"FBSRB",
+      "name":"U19 League",
+      "sid":"20",
+      "fullname":"FBSRB U19 League-20",
+      "date1":"2020-08-01 00:00:00",
+      "date2":"2021-06-30 00:00:00"
+    },
+    {
+      "id":"100974",
+      "mgroup":"FBSRB",
+      "name":"Srpska Liga > Vojvodina",
+      "sid":"20",
+      "fullname":"FBSRB Srpska Liga > Vojvodina-20",
+      "date1":"2020-08-15 00:00:00",
+      "date2":"2021-06-05 00:00:00"
+    },
+    {
+      "id":"101143",
+      "mgroup":"FBSRB",
+      "name":"Srpska Liga > Belgrade",
+      "sid":"20",
+      "fullname":"FBSRB Srpska Liga > Belgrade-20",
+      "date1":"2020-08-14 00:00:00",
+      "date2":"2021-06-30 00:00:00"
+    },
+    {
+      "id":"101144",
+      "mgroup":"FBSRB",
+      "name":"Srpska Liga > East",
+      "sid":"20",
+      "fullname":"FBSRB Srpska Liga > East-20",
+      "date1":"2020-08-15 00:00:00",
+      "date2":"2021-06-06 00:00:00"
+    },
+    {
+      "id":"101145",
+      "mgroup":"FBSRB",
+      "name":"Srpska Liga > West",
+      "sid":"20",
+      "fullname":"FBSRB Srpska Liga > West-20",
+      "date1":"2020-08-15 00:00:00",
+      "date2":"2021-06-05 00:00:00"
+    },
+    {
+      "id":"107212",
+      "mgroup":"FBSRB",
+      "name":"Cup > Quarter-finals",
+      "sid":"20",
+      "fullname":"FBSRB Cup > Quarter-finals-20",
+      "date1":"2021-03-11 00:00:00",
+      "date2":"2021-03-31 00:00:00"
+    }
+  ]
+}
