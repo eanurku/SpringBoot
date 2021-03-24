@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping(value = "/tx")
+@RequestMapping(value = "/tx",produces = {"application/xml"})
 public class TestTxClient {
 
     RestClientForXmlToJava restClientForXmlToJava;

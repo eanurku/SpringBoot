@@ -9,14 +9,13 @@ import org.springframework.web.client.RestTemplate;
 @Configuration
 public class ClientConfig {
 
-
     @Bean
-    public RestTemplate restTemplate(){
+    public RestTemplate restTemplate() {
         return new RestTemplate();
     }
 
     @Bean
-    public TestSupportTxClient testSupportTxClient(@Value("${groups_url}") String rootUrl,RestTemplate restTemplate){
-        return new TestSupportTxClient(rootUrl,restTemplate);
+    public TestSupportTxClient testSupportTxClient(@Value("${groups_url}") String rootUrl, RestTemplate restTemplate) {
+        return new TestSupportTxClient(rootUrl, restTemplate);
     }
 }

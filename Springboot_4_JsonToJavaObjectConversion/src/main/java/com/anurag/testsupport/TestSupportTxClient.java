@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.client.RestTemplate;
 
 @RestController
-@RequestMapping(value = "/tx")
+@RequestMapping(value = "/tx",produces = {"application/json"})
 @Api(value = "TestSupportTxClient")
 public class TestSupportTxClient {
 

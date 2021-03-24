@@ -21,8 +21,8 @@ public class TestSupportSwaggerConfig {
                 .paths(PathSelectors.any())
                 .build()
                 .tags(
-                        new Tag("TestSupportTxClient", "TestSupportTxClient for json to java objects"),
-                        new Tag("tag2", "tag2 description")
+                        new Tag("TestSupportTxClient", "TestSupportTxClient for json to java objects")
+                        //another tag
                 )
                 .apiInfo(apiInfo())
                 .groupName("internal api");
