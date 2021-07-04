@@ -25,10 +25,9 @@ public class Test {
     public static void main(String[] args) {
 
 
-        String s="";
-        System.out.println("length="+s.length());
+        String[] s=new String[]{"America is shit","india is avg","nothing is good avg"};
+        Arrays.stream(s).filter(str->str.contains("avg")).forEach(System.out::println);
 
-        System.out.println("");
 
 //        Team team=Team.HOME;
 //        System.out.println(team.toString());

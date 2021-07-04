@@ -24,6 +24,7 @@
         <module>common</module>
         <module>Springboot_3_XmlToJavaObjectConversion</module>
         <module>Springboot_4_JsonToJavaObjectConversion</module>
+        <module>SpringBoot_5_Swagger</module>
     </modules>
 
     <properties>
