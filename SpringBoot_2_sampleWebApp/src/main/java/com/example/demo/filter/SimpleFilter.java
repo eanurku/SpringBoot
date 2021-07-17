@@ -14,10 +14,10 @@ public class SimpleFilter implements Filter {
 
     @Override
     public void doFilter(ServletRequest servletRequest, ServletResponse servletResponse, FilterChain filterChain) throws IOException, ServletException {
-        System.out.println(servletRequest.toString());
-        System.out.println(servletRequest.getRemoteAddr());
-        System.out.println(servletRequest.getRemoteHost());
-        System.out.println(servletRequest.getRemotePort());
+        System.out.println("filter- "+servletRequest.toString());
+        System.out.println("filter- "+servletRequest.getRemoteAddr());
+        System.out.println("filter- "+servletRequest.getRemoteHost());
+        System.out.println("filter- "+servletRequest.getRemotePort());
         filterChain.doFilter(servletRequest,servletResponse);
     }
 

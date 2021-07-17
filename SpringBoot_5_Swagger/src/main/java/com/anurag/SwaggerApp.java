@@ -11,11 +11,6 @@ public class SwaggerApp {
     public static void main(String[] args) {
         SpringApplication.run(SwaggerApp.class);
 
-//        UriComponentsBuilder uriBuilder = UriComponentsBuilder.fromHttpUrl("http://localhost:8201" + "/api/runningball/");
-//        uriBuilder.pathSegment("sport", String.valueOf(12)) //
-//                .pathSegment("league", String.valueOf(34));
-
-
         UriComponentsBuilder uriBuilder = UriComponentsBuilder.fromHttpUrl("http://localhost:8201" + "/api/runningball/");
         uriBuilder.pathSegment("sport", String.valueOf(12))
                 .path("score")
