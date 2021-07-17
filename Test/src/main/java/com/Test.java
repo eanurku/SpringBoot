@@ -8,6 +8,7 @@ import java.time.temporal.TemporalAccessor;
 import java.util.*;
 import java.util.stream.Collector;
 import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
 import org.apache.commons.lang3.tuple.Pair;
 
@@ -24,9 +25,64 @@ public class Test {
 
     public static void main(String[] args) {
 
+        System.out.println("123".compareTo(null));
 
-        String[] s=new String[]{"America is shit","india is avg","nothing is good avg"};
-        Arrays.stream(s).filter(str->str.contains("avg")).forEach(System.out::println);
+
+
+//        DepartmentNew dep1=new DepartmentNew();
+//        Set<Employee> employees=new LinkedHashSet<>();
+//        employees.add(new Employee("123",null));
+//
+//        dep1.setEmployees(employees);
+//
+//        Employee val = Optional.ofNullable(dep1.getEmployees()).map(Collection::stream).orElseGet(Stream::empty)
+//                .map(Optional::ofNullable)
+//                .findFirst().orElseGet(Optional::empty).orElse(null);
+//        System.out.println(val);
+
+//        List<Employee> employees1=new ArrayList<>();
+//        employees1.add(new Employee("123",""));
+//        employees1.add(new Employee("111",null));
+//        employees1.add(new Employee("33","abc"));
+//        employees1.add(new Employee("551",""));
+//        employees1.add(new Employee("11","xyz"));
+        //Collections.sort(employees1,Comparator.comparing(Employee::getName,Comparator.nullsFirst(Comparator.naturalOrder())));
+        //employees1.forEach(e-> System.out.println(e.getId()));
+
+
+        //list to string collectionion
+//        Set<Employee> employees2=new LinkedHashSet<>();
+//        employees2.add(new Employee("123",""));
+//        employees2.add(new Employee("111",null));
+//        employees2.add(new Employee("33","abc"));
+//        employees2.add(new Employee("551",""));
+//        employees2.add(new Employee("11","xyz"));
+//
+//        String val = employees2.stream().map(e -> e.getName()).collect(Collectors.joining(","));
+//
+//        System.out.println(val);
+
+
+        //get first element from map
+//        DepartmentNew dep2=new DepartmentNew();
+//        HashMap<String, Period> map = new HashMap<>();
+//        Map.Entry<Integer, Period> first = Optional.ofNullable(dep2.getMymap()).orElseGet(Collections::emptyMap).entrySet()
+//                .stream()
+//                .map(Optional::ofNullable)
+//                .findFirst().orElseGet(Optional::empty).orElse(null);
+//
+//                System.out.println(first);
+
+
+
+
+
+
+
+
+
+//        String[] s=new String[]{"America is shit","india is avg","nothing is good avg"};
+//        Arrays.stream(s).filter(str->str.contains("avg")).forEach(System.out::println);
 
 
 //        Team team=Team.HOME;
