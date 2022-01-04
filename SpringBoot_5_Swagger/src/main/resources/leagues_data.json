@@ -1,0 +1,35 @@
+[
+  {
+    "id": 100415,
+    "name": " Cup Women",
+    "stringId": 8224382,
+    "isActive": true,
+    "sportId": 7,
+    "regionid": 35,
+    "regionname": "Belgium",
+    "gender": "",
+    "ageGroup": ""
+  },
+  {
+    "id": 100416,
+    "name": " Men U21",
+    "stringId": 8224383,
+    "isActive": true,
+    "sportId": 7,
+    "regionid": 35,
+    "regionname": "Belgium",
+    "gender": "",
+    "ageGroup": ""
+  },
+  {
+    "id": 100417,
+    "name": " Supercup",
+    "stringId": 8224384,
+    "isActive": true,
+    "sportId": 7,
+    "regionid": 35,
+    "regionname": "Belgium",
+    "gender": "",
+    "ageGroup": ""
+  }
+  ]

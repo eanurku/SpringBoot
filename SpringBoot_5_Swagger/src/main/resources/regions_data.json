@@ -1,0 +1,20 @@
+[
+  {
+    "id": 6,
+    "name": "World",
+    "isCountry": false,
+    "code": "WRL"
+  },
+  {
+    "id": 7,
+    "name": "Europe",
+    "isCountry": false,
+    "code": "EUR"
+  },
+  {
+    "id": 8,
+    "name": "Austria",
+    "isCountry": true,
+    "code": "AUT"
+  }
+]

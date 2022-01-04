@@ -1,0 +1,38 @@
+[
+ {
+   "id": 50558,
+   "name": "Linkoping City",
+   "stringId": 6589940,
+   "teamCode": "",
+   "sportId": 4,
+   "nationality": null,
+   "isActive": true,
+   "isReserve": false,
+   "gender": "",
+   "ageGroup": ""
+ },
+ {
+   "id": 50559,
+   "name": "IF Sylvia",
+   "stringId": 6550958,
+   "teamCode": "",
+   "sportId": 4,
+   "nationality": null,
+   "isActive": false,
+   "isReserve": false,
+   "gender": "",
+   "ageGroup": ""
+ },
+ {
+   "id": 48850,
+   "name": "IF Sylvia",
+   "stringId": 6550958,
+   "teamCode": "",
+   "sportId": 4,
+   "nationality": null,
+   "isActive": false,
+   "isReserve": false,
+   "gender": "",
+   "ageGroup": ""
+ }
+ ]
