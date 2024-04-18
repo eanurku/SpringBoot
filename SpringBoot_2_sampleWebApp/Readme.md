@@ -5,5 +5,7 @@
           <version>3.0.0</version>
       </dependency>
 
-2.
+2. swagger url:
+* localhost:8999/swagger-ui/
+3. 
 
